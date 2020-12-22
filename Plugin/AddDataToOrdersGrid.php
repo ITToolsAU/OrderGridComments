@@ -55,7 +55,7 @@ class AddDataToOrdersGrid
                 $this->logger->log(100, $selectException);
             }
         }
-        $this->logger->log(100, $collection->getSelectSql(true));
+        
         return $collection;
     }
 }

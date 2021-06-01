@@ -2,7 +2,7 @@
     "name": "ittools/ordergridcomments",
     "description": "Add filterable comments from order in admin",
     "require": {
-        "php": "~7.4.0"
+        "php": "~7.3.0|~7.4.0"
     },
     "type": "magento2-module",
     "version": "1.1.1",

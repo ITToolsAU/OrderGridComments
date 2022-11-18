@@ -7,21 +7,11 @@ namespace Ittools\OrderGridComments\Plugin;
 class AddDataToOrdersGrid
 {
     /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
-    /**
      * AddDataToOrdersGrid constructor.
      *
-     * @param \Psr\Log\LoggerInterface $customLogger
-     * @param array $data
      */
-    public function __construct(
-        \Psr\Log\LoggerInterface $customLogger,
-        array $data = []
-    ) {
-        $this->logger   = $customLogger;
+    public function __construct(private readonly \Psr\Log\LoggerInterface $logger, array $data = [])
+    {
     }
 
     /**
